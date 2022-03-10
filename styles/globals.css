@@ -25,6 +25,29 @@ body {
   background-position: top;
 }
 
+.bg-fade {
+  background-color: rgba(0,0,0,0.46);
+  opacity: 0.8;
+}
+
+.section-3 {
+  background-image: url("/assets/bg2.png"); 
+  background-size: cover;
+  background-position: top;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+}
+
+.btn-facebook {
+  background-color: #3b5998;
+}
+
+.btn-instagram {
+  background-color: #262626;
+}
+
 .elementor-shape {
   overflow: hidden;
   position: absolute;
