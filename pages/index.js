@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Embudo from '../src/components/embudo'
-
+import Script from 'next/script'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet" />
       </Head>
-
+      <Script src="https://kit.fontawesome.com/e2c8f51d15.js" crossOrigin="anonymous"></Script>
       <Embudo />
     </div>
   )
