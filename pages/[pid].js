@@ -6,7 +6,7 @@ import axios from 'axios'
 import Image from 'next/image'
 import Script from 'next/script'
 
-const ContactBar = ({ photo, fullname, whatsapp, facebook, instagram }) => {
+const ContactBar = ({ photo, fullname, whatsapp, facebook, instagram, tiktok }) => {
     return (
         <div className='fixed bottom-0 h-24 w-full bg-gradient-to-b from-black to-gray-800 z-10 flex items-center'>
             <div className='w-9/12 mx-auto flex items-center justify-center gap-20 text-gray-50'>
@@ -26,6 +26,11 @@ const ContactBar = ({ photo, fullname, whatsapp, facebook, instagram }) => {
                     {instagram &&
                         <a className='text-3xl btn-instagram py-2 px-3 rounded-md' href={instagram} target="_blank">
                             <i className="fa-brands fa-instagram"></i>
+                        </a>
+                    }
+                    {tiktok &&
+                        <a className='text-3xl btn-tiktok py-2 px-3 rounded-md' href={tiktok} target="_blank">
+                            <i className="fa-brands fa-tiktok"></i>
                         </a>
                     }
                 </div>
