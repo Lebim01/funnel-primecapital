@@ -90,6 +90,12 @@ const Embudo = () => {
             <div className='section-4 w-full px-auto flex flex-col justify-center relative bg-white'>
                 <div className='w-full flex flex-col items-center py-36 gap-5'>
                     <TitleSection>Testimonios</TitleSection>
+                    <div className='grid grid-cols-4 gap-5 w-8/12 mh-8'>
+                        <Image src="/assets/testimonios/1.jpeg" width={80} height={160} layout="responsive" />
+                        <Image src="/assets/testimonios/2.jpeg" width={80} height={160} layout="responsive" />
+                        <Image src="/assets/testimonios/3.jpeg" width={80} height={160} layout="responsive" />
+                        <Image src="/assets/testimonios/4.jpeg" width={80} height={160} layout="responsive" />
+                    </div>
                 </div>
             </div>
         </>
