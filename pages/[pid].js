@@ -3,7 +3,6 @@ import Embudo from '../src/components/embudo'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import Image from 'next/image'
 import Script from 'next/script'
 
 const ContactBar = ({ photo, fullname, whatsapp, facebook, instagram, tiktok }) => {
