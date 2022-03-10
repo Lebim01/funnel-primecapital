@@ -12,6 +12,18 @@ const ColumnItem = ({ title, description, icon }) => (
     </div>
 )
 
+const ButtonVIPGroup = () => (
+    <a
+        href="https://chat.whatsapp.com/HpAypFkMprbJ1vWkcMlIab"
+        className='btn-whatsapp rounded-full px-5 py-3 font-bold flex gap-4 items-center hover:scale-110 hover:bg-green-700 hover:cursor-pointer transition-transform'
+    >
+        <i className="text-lg fa-brands fa-whatsapp"></i>
+        <span>
+            ÚNETE AL GRUPO VIP
+        </span>
+    </a>
+)
+
 const Embudo = () => {
     return (
         <>
@@ -66,6 +78,7 @@ const Embudo = () => {
                 <div className='w-full flex flex-col items-center py-36 gap-5 my-24'>
                     <iframe className="w-4/6 h-2/3 aspect-video" frameBorder="0" allowFullScreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/SJRUjm7Wm9A?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsistemaforexautomatico.com&amp;widgetid=1"></iframe>
                     <TitleSection>Únete al grupo VIP y recibe toda la info</TitleSection>
+                    <ButtonVIPGroup />
                 </div>
                 <div className="elementor-shape elementor-shape-bottom" data-negative="false">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
