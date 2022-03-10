@@ -10,7 +10,7 @@ const ContactBar = ({ photo, fullname, whatsapp, facebook, instagram }) => {
     return (
         <div className='fixed bottom-0 h-24 w-full bg-gradient-to-b from-black to-gray-800 z-10 flex items-center'>
             <div className='w-9/12 mx-auto flex items-center justify-center gap-20 text-gray-50'>
-                <img className='rounded-full md:block hidden' src={photo} height="80" width="80" alt="Foto" />
+                <img className='rounded-full' src={photo} height="80" width="80" alt="Foto" />
                 <span className='text-xl w-6/12 md:block hidden'>Hola soy {fullname} estoy para ayudarte</span>
                 <div className='flex gap-5'>
                     {whatsapp &&

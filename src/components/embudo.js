@@ -76,7 +76,7 @@ const Embudo = () => {
 
             <div className='section-3 w-full px-auto flex flex-col justify-center text-white relative'>
                 <div className='w-full flex flex-col items-center py-36 gap-5 my-24'>
-                    <iframe className="w-4/6 h-2/3 aspect-video" frameBorder="0" allowFullScreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/SJRUjm7Wm9A?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsistemaforexautomatico.com&amp;widgetid=1"></iframe>
+                    <iframe className="md:h-[600px] md:w-4/6 w-5/6 h-[320px]" frameBorder="0" allowFullScreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/SJRUjm7Wm9A?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsistemaforexautomatico.com&amp;widgetid=1"></iframe>
                     <TitleSection>Únete al grupo VIP y recibe toda la info</TitleSection>
                     <ButtonVIPGroup />
                 </div>
@@ -91,10 +91,10 @@ const Embudo = () => {
                 <div className='w-full flex flex-col items-center py-36 gap-5'>
                     <TitleSection>Testimonios</TitleSection>
                     <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 w-8/12 mh-8'>
-                        <Image src="/assets/testimonios/1.jpeg" width={80} height={160} layout="responsive" />
-                        <Image src="/assets/testimonios/2.jpeg" width={80} height={160} layout="responsive" />
-                        <Image src="/assets/testimonios/3.jpeg" width={80} height={160} layout="responsive" />
-                        <Image src="/assets/testimonios/4.jpeg" width={80} height={160} layout="responsive" />
+                        <img src="/assets/testimonios/1.jpeg" height={160} layout="responsive" />
+                        <img src="/assets/testimonios/2.jpeg" height={160} layout="responsive" />
+                        <img src="/assets/testimonios/3.jpeg" height={160} layout="responsive" />
+                        <img src="/assets/testimonios/4.jpeg" height={160} layout="responsive" />
                     </div>
                 </div>
             </div>
