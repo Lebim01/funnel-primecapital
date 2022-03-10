@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const BigTitleSection = ({ children }) => <span className='xl:text-6xl lg:text-5xl md:text-5xl sm:text-4xl text-3xl'>{children}</span>
+const BigTitleSection = ({ children }) => <span className='xl:text-7xl lg:text-6xl md:text-6xl sm:text-5xl text-4xl'>{children}</span>
 const TitleSection = ({ children }) => <span className='xl:text-5xl lg:text-4xl md:text-4xl sm:text-3xl text-2xl'>{children}</span>
 const SubtitleSection = ({ children }) => <h2 className='text-center md:text-xl sm:text-lg text-md leading-loose'>{children}</h2>
 
