@@ -1,6 +1,8 @@
 import Image from 'next/image'
 
+const BigTitleSection = ({ children }) => <span className='xl:text-6xl lg:text-5xl md:text-5xl sm:text-4xl text-3xl'>{children}</span>
 const TitleSection = ({ children }) => <span className='xl:text-5xl lg:text-4xl md:text-4xl sm:text-3xl text-2xl'>{children}</span>
+const SubtitleSection = ({ children }) => <h2 className='text-center md:text-xl sm:text-lg text-md leading-loose'>{children}</h2>
 
 const ColumnItem = ({ title, description, icon }) => (
     <div className='flex flex-col items-start hover:scale-110 hover:cursor-pointer transition-transform'>
@@ -96,6 +98,19 @@ const Embudo = () => {
                         <img src="/assets/testimonios/3.jpeg" height={160} layout="responsive" />
                         <img src="/assets/testimonios/4.jpeg" height={160} layout="responsive" />
                     </div>
+                </div>
+                <div className="elementor-shape elementor-shape-top" data-negative="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                        <path className="elementor-shape-fill" d="M0,6V0h1000v100L0,6z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div className='section-5 w-full px-auto flex flex-col justify-center relative text-white bg-black'>
+                <div className='w-full flex flex-col items-center py-36 gap-5'>
+                    <BigTitleSection>¿listo para empezar a ganar?</BigTitleSection>
+                    <SubtitleSection>No te pierdas la información y únete al grupo VIP</SubtitleSection>
+                    <ButtonVIPGroup />
                 </div>
             </div>
         </>
