@@ -49,7 +49,7 @@ const Embudo = () => {
                 <div className='flex flex-col items-center lg:px-32 md:px-18 sm:px-10 px-5 py-20 gap-5 container'>
                     <TitleSection>¿Por qué trabajar con este Bot?</TitleSection>
                     <h2 className='text-center md:text-xl sm:text-lg text-md leading-loose'>Estos son los 3 beneficios más importantes.</h2>
-                    <div className='grid grid-cols-3 xl:gap-40 lg:gap-20 gap-5 mt-5'>
+                    <div className='grid grid-cols-3 sm:grid-cols-1 sm:px-5 xl:gap-40 lg:gap-20 gap-5 mt-5'>
                         <ColumnItem
                             title="No quemas cuentas"
                             description="Usa algoritmos, redes neuronales, inteligencia artificial cuántica, para detectar el mejor momento de entrada y salida, de esta forma una operativa se cierra en cuestión de segundos"
