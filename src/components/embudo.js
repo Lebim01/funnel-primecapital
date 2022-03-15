@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 const BigTitleSection = ({ children }) => <span className='xl:text-7xl lg:text-6xl md:text-6xl sm:text-5xl text-4xl'>{children}</span>
 const TitleSection = ({ children }) => <span className='xl:text-5xl lg:text-4xl md:text-4xl sm:text-3xl text-2xl'>{children}</span>
 const SubtitleSection = ({ children }) => <h2 className='text-center md:text-xl sm:text-lg text-md leading-loose'>{children}</h2>
@@ -7,7 +5,7 @@ const SubtitleSection = ({ children }) => <h2 className='text-center md:text-xl 
 const ColumnItem = ({ title, description, icon }) => (
     <div className='flex flex-col items-start hover:scale-110 hover:cursor-pointer transition-transform'>
         <div className='flex w-full justify-center mb-2'>
-            <Image src={icon} width={50} height={50} alt="burn-icon" />
+            <img src={icon} width={50} height={50} alt="burn-icon" />
         </div>
         <span className='block w-full font-bold leading-loose text-xl text-center'>{title}</span>
         <span className='block leading-relaxed text-center mt-2'>{description}</span>
@@ -32,7 +30,7 @@ const Embudo = () => {
             <div className='section-1 w-full px-auto pb-20 lg:pb-48 flex flex-col justify-center items-center text-white relative'>
                 <div className='flex flex-col items-center lg:px-32 md:px-18 sm:px-10 px-5 py-36 gap-5 container'>
                     <div className='flex justify-center'>
-                        <Image src={"/assets/logo.png"} alt="Logo" width={150} height={150} />
+                        <img src={"/assets/logo.png"} alt="Logo" width={150} height={150} />
                     </div>
                     <h1 className='text-center xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl'>Opera 100% en automático y obtén hasta un 30% mensual</h1>
                     <h2 className='text-center md:text-xl sm:text-lg text-md leading-loose'>
