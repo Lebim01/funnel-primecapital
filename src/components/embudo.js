@@ -12,9 +12,9 @@ const ColumnItem = ({ title, description, icon }) => (
     </div>
 )
 
-const ButtonVIPGroup = () => (
+const ButtonVIPGroup = ({ href }) => (
     <a
-        href="https://chat.whatsapp.com/HpAypFkMprbJ1vWkcMlIab"
+        href={href}
         className='btn-whatsapp rounded-full px-5 py-3 font-bold flex gap-4 items-center hover:scale-110 hover:bg-green-700 hover:cursor-pointer transition-transform'
     >
         <i className="text-lg fa-brands fa-whatsapp"></i>
@@ -24,7 +24,7 @@ const ButtonVIPGroup = () => (
     </a>
 )
 
-const Embudo = () => {
+const Embudo = ({ user }) => {
     return (
         <>
             <div className='section-1 w-full px-auto pb-20 lg:pb-48 flex flex-col justify-center items-center text-white relative'>
@@ -78,7 +78,7 @@ const Embudo = () => {
                 <div className='w-full flex flex-col items-center py-36 gap-5 my-24'>
                     <iframe className="md:h-[600px] md:w-4/6 w-5/6 h-[320px]" frameBorder="0" allowFullScreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/SJRUjm7Wm9A?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsistemaforexautomatico.com&amp;widgetid=1"></iframe>
                     <TitleSection>Únete al grupo VIP y recibe toda la info</TitleSection>
-                    <ButtonVIPGroup />
+                    {user && user.whatsapp_group && <ButtonVIPGroup href={user.whatsapp_group} />}
                 </div>
                 <div className="elementor-shape elementor-shape-bottom" data-negative="false">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
@@ -108,7 +108,7 @@ const Embudo = () => {
                 <div className='w-full flex flex-col items-center py-36 gap-5'>
                     <BigTitleSection>¿listo para empezar a ganar?</BigTitleSection>
                     <SubtitleSection>No te pierdas la información y únete al grupo VIP</SubtitleSection>
-                    <ButtonVIPGroup />
+                    {user && user.whatsapp_group && <ButtonVIPGroup href={user.whatsapp_group} />}
                 </div>
             </div>
         </>

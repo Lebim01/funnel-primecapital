@@ -65,7 +65,7 @@ export default function Home() {
             </Head>
             <Script src="https://kit.fontawesome.com/e2c8f51d15.js" crossOrigin="anonymous"></Script>
 
-            <Embudo />
+            <Embudo user={user} />
             <ContactBar {...user} />
         </div >
     )
